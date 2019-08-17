@@ -1,0 +1,113 @@
+Renesas Optimizing Linker (W2.06.00 )             24-Aug-2017 12:52:58
+
+*** Options ***
+
+-subcommand=DefaultBuild\eFly_Hummingbird_R5F523T5ADFM.clnk
+-library=DefaultBuild\eFly_Hummingbird_R5F523T5ADFM.lib
+-input=DefaultBuild\r_cg_main.obj
+-input=DefaultBuild\r_cg_dbsct.obj
+-input=DefaultBuild\r_cg_intprg.obj
+-input=DefaultBuild\r_cg_resetprg.obj
+-input=DefaultBuild\r_cg_sbrk.obj
+-input=DefaultBuild\r_cg_vecttbl.obj
+-input=DefaultBuild\r_cg_hardware_setup.obj
+-input=DefaultBuild\r_cg_cgc.obj
+-input=DefaultBuild\r_cg_cgc_user.obj
+-input=DefaultBuild\r_cg_mtu3.obj
+-input=DefaultBuild\r_cg_mtu3_user.obj
+-input=DefaultBuild\r_cg_cmt.obj
+-input=DefaultBuild\r_cg_cmt_user.obj
+-input=DefaultBuild\r_cg_sci.obj
+-input=DefaultBuild\r_cg_sci_user.obj
+-input=DefaultBuild\r_cg_icu.obj
+-input=DefaultBuild\r_cg_icu_user.obj
+-input=DefaultBuild\eFly_sonar.obj
+-input=DefaultBuild\r_cg_port.obj
+-input=DefaultBuild\r_cg_port_user.obj
+-input=DefaultBuild\eFly_RC.obj
+-input=DefaultBuild\eFly_delay.obj
+-input=DefaultBuild\eFly_math.obj
+-input=DefaultBuild\eFly_IIC.obj
+-input=DefaultBuild\eFly_MPU6050.obj
+-input=DefaultBuild\eFly_HMC5883.obj
+-input=DefaultBuild\eFly_BMP180.obj
+-input=DefaultBuild\eFly_IMU.obj
+-input=DefaultBuild\eFly_led.obj
+-input=DefaultBuild\eFly_schedule.obj
+-input=DefaultBuild\eFly_UART.obj
+-input=DefaultBuild\eFly_control.obj
+-input=DefaultBuild\eFly_PID.obj
+-input=DefaultBuild\eFly_motor.obj
+-input=DefaultBuild\eFly_filter.obj
+-input=DefaultBuild\Key.obj
+-noprelink
+-output=DefaultBuild\eFly_Hummingbird_R5F523T5ADFM.abs
+-list=DefaultBuild\eFly_Hummingbird_R5F523T5ADFM.map
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFFE0000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFFE0100,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00000004  000001b9       1b6   1
+R_1
+                                  000001ba  000001ed        34   1
+B_2
+                                  000001ee  00000759       56c   2
+R_2
+                                  0000075a  000007dd        84   2
+B
+                                  000007e0  00000927       148   4
+R
+                                  00000928  00000f23       5fc   4
+SU
+                                  00000f24  00001023       100   4
+SI
+                                  00001024  00001323       300   4
+PResetPRG
+                                  fffe0000  fffe003d        3e   1
+C_1
+                                  fffe0100  fffe0100         1   1
+C_2
+                                  fffe0102  fffe010d         c   2
+C
+                                  fffe0110  fffe02df       1d0   4
+C$DSEC
+                                  fffe02e0  fffe0303        24   4
+C$BSEC
+                                  fffe0304  fffe031b        18   4
+C$INIT
+                                  fffe031c  fffe031c         0   1
+C$VTBL
+                                  fffe031c  fffe031c         0   1
+C$VECT
+                                  fffe031c  fffe071b       400   4
+D_1
+                                  fffe071c  fffe074f        34   1
+D_2
+                                  fffe0750  fffe07d3        84   2
+D
+                                  fffe07d4  fffe0dcf       5fc   4
+P
+                                  fffe0dd0  fffe7a45      6c76   1
+PIntPRG
+                                  fffe7a46  fffe7a53         e   1
+W_1
+                                  fffe7a54  fffe7a68        15   1
+W_2
+                                  fffe7a6a  fffe7a7d        14   2
+W
+                                  fffe7a80  fffe7a80         0   4
+L
+                                  fffe7a80  fffe7a80         0   1
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4

@@ -1,0 +1,115 @@
+Renesas Optimizing Linker (W2.06.00 )             09-Sep-2017 11:09:59
+
+*** Options ***
+
+-subcommand=DefaultBuild\CUMT_Hummingbird_R5F523T5ADFM.clnk
+-library=DefaultBuild\CUMT_Hummingbird_R5F523T5ADFM.lib
+-input=DefaultBuild\r_cg_main.obj
+-input=DefaultBuild\r_cg_dbsct.obj
+-input=DefaultBuild\r_cg_intprg.obj
+-input=DefaultBuild\r_cg_resetprg.obj
+-input=DefaultBuild\r_cg_sbrk.obj
+-input=DefaultBuild\r_cg_vecttbl.obj
+-input=DefaultBuild\r_cg_hardware_setup.obj
+-input=DefaultBuild\r_cg_cgc.obj
+-input=DefaultBuild\r_cg_cgc_user.obj
+-input=DefaultBuild\r_cg_mtu3.obj
+-input=DefaultBuild\r_cg_mtu3_user.obj
+-input=DefaultBuild\r_cg_cmt.obj
+-input=DefaultBuild\r_cg_cmt_user.obj
+-input=DefaultBuild\r_cg_sci.obj
+-input=DefaultBuild\r_cg_sci_user.obj
+-input=DefaultBuild\r_cg_icu.obj
+-input=DefaultBuild\r_cg_icu_user.obj
+-input=DefaultBuild\r_cg_port.obj
+-input=DefaultBuild\r_cg_port_user.obj
+-input=DefaultBuild\CUMT_BMP180.obj
+-input=DefaultBuild\CUMT_control.obj
+-input=DefaultBuild\CUMT_delay.obj
+-input=DefaultBuild\CUMT_filter.obj
+-input=DefaultBuild\CUMT_HMC5883.obj
+-input=DefaultBuild\CUMT_IIC.obj
+-input=DefaultBuild\CUMT_IMU.obj
+-input=DefaultBuild\CUMT_led.obj
+-input=DefaultBuild\CUMT_math.obj
+-input=DefaultBuild\CUMT_motor.obj
+-input=DefaultBuild\CUMT_MPU6050.obj
+-input=DefaultBuild\CUMT_PID.obj
+-input=DefaultBuild\CUMT_RC.obj
+-input=DefaultBuild\CUMT_schedule.obj
+-input=DefaultBuild\CUMT_sonar.obj
+-input=DefaultBuild\CUMT_UART.obj
+-input=DefaultBuild\CUMT_image.obj
+-input=DefaultBuild\EasyTracer.obj
+-input=DefaultBuild\Key.obj
+-noprelink
+-output=DefaultBuild\CUMT_Hummingbird_R5F523T5ADFM.abs
+-list=DefaultBuild\CUMT_Hummingbird_R5F523T5ADFM.map
+-nooptimize
+-start=B_1,R_1,B_2,R_2,B,R,SU,SI/04,PResetPRG/0FFFE0000,C_1,C_2,C,C$DSEC,C$BSEC,C$INIT,C$VTBL,C$VECT,D_1,D_2,D,P,PIntPRG,W_1,W_2,W,L/0FFFE0100,EXCEPTVECT/0FFFFFF80,RESETVECT/0FFFFFFFC
+-rom=D=R,D_1=R_1,D_2=R_2
+-nologo
+-end
+
+*** Error information ***
+
+*** Mapping List ***
+
+SECTION                            START      END         SIZE   ALIGN
+
+B_1
+                                  00000004  000001d9       1d6   1
+R_1
+                                  000001da  00000210        37   1
+B_2
+                                  00000212  00000c41       a30   2
+R_2
+                                  00000c42  00000cdd        9c   2
+B
+                                  00000ce0  00000e67       188   4
+R
+                                  00000e68  000014c7       660   4
+SU
+                                  000014c8  000015c7       100   4
+SI
+                                  000015c8  000018c7       300   4
+PResetPRG
+                                  fffe0000  fffe003d        3e   1
+C_1
+                                  fffe0100  fffe0100         1   1
+C_2
+                                  fffe0102  fffe010d         c   2
+C
+                                  fffe0110  fffe02df       1d0   4
+C$DSEC
+                                  fffe02e0  fffe0303        24   4
+C$BSEC
+                                  fffe0304  fffe031b        18   4
+C$INIT
+                                  fffe031c  fffe031c         0   1
+C$VTBL
+                                  fffe031c  fffe031c         0   1
+C$VECT
+                                  fffe031c  fffe071b       400   4
+D_1
+                                  fffe071c  fffe0752        37   1
+D_2
+                                  fffe0754  fffe07ef        9c   2
+D
+                                  fffe07f0  fffe0e4f       660   4
+P
+                                  fffe0e50  fffe8db3      7f64   1
+PIntPRG
+                                  fffe8db4  fffe8dc1         e   1
+W_1
+                                  fffe8dc2  fffe8dd6        15   1
+W_2
+                                  fffe8dd8  fffe8dff        28   2
+W
+                                  fffe8e00  fffe8e00         0   4
+L
+                                  fffe8e00  fffe8e4f        50   4
+EXCEPTVECT
+                                  ffffff80  fffffffb        7c   4
+RESETVECT
+                                  fffffffc  ffffffff         4   4
