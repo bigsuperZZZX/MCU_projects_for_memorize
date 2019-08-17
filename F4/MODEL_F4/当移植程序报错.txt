@@ -1,0 +1,1 @@
+如果移植到寄存器版的程序里，需要添加预编译指令 STM32F40_41xxx,USE_STDPERIPH_DRIVER

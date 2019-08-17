@@ -1,0 +1,6 @@
+-c --cpu Cortex-M3 -D__MICROLIB -g -O0 --apcs=interwork -I .\user -I .\Libraries\STM32F10x_StdPeriph_Driver\inc -I .\Libraries\CMSIS\CM3\CoreSupport -I .\Libraries\CMSIS\CM3\DeviceSupport\ST\STM32F10x -I .\APP\LED -I .\APP\SysTick -I .\APP\PWM -I .\APP\printf -I .\APP\ADC -I .\APP\exit -I .\APP\key -I .\APP\time -I .\APP\usart -I .\APP\oled -I .\APP\sys -I .\APP\pid
+-IG:\程序\项目程序\风力帆板\RTE\_Target_1
+-ID:\Keil_v5\ARM\PACK\Keil\STM32F1xx_DFP\1.0.4\Device\Include
+-ID:\Keil_v5\ARM\CMSIS\Include
+-D__UVISION_VERSION="522" -DSTM32F10X_MD -DUSE_STDPERIPH_DRIVER
+-o .\output\usart.o --omf_browse .\output\usart.crf --depend .\output\usart.d --feedback ".\output\工程模板.fed" "APP\usart\usart.c"
